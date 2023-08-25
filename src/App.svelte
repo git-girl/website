@@ -8,6 +8,10 @@
         src="images/A_BlobCat_PeekWave.gif"
         alt="A blob cat gif where blob cat peaks from behind a brick wall waving"
     />
+
+    <h2>services</h2>
+
+    <a href="https://keys.lotta.gay">keyserver</a>
 </main>
 
 <style>
@@ -25,14 +29,9 @@
         font-weight: bold;
     }
 
-    .large {
-        font-size: 3em;
-    }
-
     @media (min-width: 640px) {
         main {
             max-width: none;
         }
     }
 </style>
-
