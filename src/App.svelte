@@ -3,7 +3,9 @@
 </script>
 
 <main>
-    <h1>{title}</h1>
+    <h1>
+        <a href="/" class="rainbow-text">{title}</a>
+    </h1>
     <img
         src="images/A_BlobCat_PeekWave.gif"
         alt="A blob cat gif where blob cat peaks from behind a brick wall waving"
@@ -15,9 +17,9 @@
         <li>
             <a href="https://keys.lotta.gay">keyserver</a>
             <p>
-            this doesn't quite work yet and i need to set up a
-            <br />
-            mail server and ldap for the confirmation mails
+                this doesn't quite work yet and i need to set up a
+                <br />
+                mail server and ldap for the confirmation mails
             </p>
         </li>
     </ul>
@@ -60,13 +62,14 @@
             @apply list-inside;
         }
 
-        html, body {
+        html,
+        body {
             @apply text-center;
             @apply text-text;
             @apply bg-base;
             @apply h-full;
-            @apply w-full; 
-            @apply font-sans; 
+            @apply w-full;
+            @apply font-sans;
             @apply font-normal;
             @apply hyphens-auto;
         }
@@ -88,5 +91,29 @@
             @apply focus:underline;
             @apply visited:text-mauve;
         }
+    }
+
+    .rainbow-text {
+        --mauve: #c6a0f6;
+        --maroon: #ee99a0;
+        --peach: #f5a97f;
+        --yellow: #eed49f;
+        --green: #a6da95;
+        --teal: #8bd5ca;
+        --blue: #8aadf4;
+
+        background-image: linear-gradient(
+            to left,
+            var(--mauve),
+            var(--blue),
+            var(--teal),
+            var(--green),
+            var(--yellow),
+            var(--peach),
+            var(--maroon)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
     }
 </style>
