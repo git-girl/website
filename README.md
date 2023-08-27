@@ -60,3 +60,9 @@ rm scripts/setupTypeScript.js
 ## Deploying to the web
 
 To deploy this example to Render, please see the guide at https://render.com/docs/deploy-svelte#deploy-svelte-components-in-a-static-site.
+
+## Trying to get tailwind setup
+
+[https://tailwindcss.com/docs/guides/sveltekit]()
+[https://tailwindcss.com/docs/using-with-preprocessors]()
+[https://rollupjs.org/]()
